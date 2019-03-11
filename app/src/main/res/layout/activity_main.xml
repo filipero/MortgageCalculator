@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/textViewEnterInfo"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:text="Enter Information"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:onClick="onClick"
+                android:clickable="true"
+                android:textSize="40sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <EditText
+                android:id="@+id/editTextHousePrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="House Price ($)"
+                android:inputType="numberDecimal"
+                android:textAlignment="center"
+                android:textSize="30sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal" >
+
+            <EditText
+                android:id="@+id/editTextDownPayment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Down Payment ($)"
+                android:inputType="numberDecimal"
+                android:textAlignment="center"
+                android:textSize="30sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/editTextInterestRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Interest Rate (%)"
+                android:inputType="numberDecimal"
+                android:textAlignment="center"
+                android:textSize="30sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <EditText
+                android:id="@+id/editTextTerms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Terms (Years)"
+                android:inputType="numberDecimal"
+                android:textAlignment="center"
+                android:textSize="30sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textViewBiMonthlyPayment"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:text="Bi-Monthly Payment"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="30sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textViewMonthlyPayment"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:text="Monthly Payment"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="30sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/buttonCalculate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calculate"
+                android:textSize="35sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/buttonClear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clear"
+                android:textSize="20sp" />
+        </TableRow>
+    </TableLayout>
+
+</android.support.constraint.ConstraintLayout>
